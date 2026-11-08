@@ -28,7 +28,7 @@ The project is divided into six independent RTL modules.
 |---|---|
 | `I2C_CLOCK_GENERATOR` | Generates the 100 kHz SCL clock and timing tick from the 100 MHz system clock. |
 | `I2C_MASTER` | Implements the master-side control FSM for START, address transmission, data transmission, ACK reception, and STOP operations. |
-| `I2CRECEIVER` | Receives 8-bit serial data from the slave and handles master ACK/NACK generation. |
+| `I2C_RECEIVER` | Receives 8-bit serial data from the slave and handles master ACK/NACK generation. |
 | `I2C_SLAVE` | Implements slave address recognition and incoming data reception. |
 | `I2C_TRANSMITTER` | Handles serial data transmission from the slave to the master. |
 | `I2C_CONTROLLER` | Integrates slave-side address detection, read/write handling, data reception, data transmission, and acknowledgment control. |
