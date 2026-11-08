@@ -39,7 +39,7 @@ module I2C_CONTROLLER (input wire CLK,
     assign START_COND = SCL && SDA_D && !SDA_IN;
     assign STOP_COND  = SCL && !SDA_D && SDA_IN;
 
-    always @(posedge CLK) begin
+    always @(posedge CLK or negedge RST_N) begin
         if (!RST_N) begin
             STATE <= 0;
             SHIFT_REG <= 0;
